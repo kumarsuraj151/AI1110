@@ -1,0 +1,46 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+
+\usepackage{tfrupee}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+
+
+\title{Assignment 2}
+\author{Suraj kumar \\ \normalsize AI21BTECH11029 \\}
+\begin{document}
+\maketitle
+\textbf{Question (9)} $\Rightarrow$ Solve the differential equation :
+  \begin{align*}
+  \frac{dy}{dx}=\frac{x+y+2}{2(x+y)-1}
+  \end{align*}
+  
+\textbf{Solution}:
+\begin{align}
+let \hspace{10mm} &x+y=t
+\end{align}
+ differentiate (i) w.r.t to $x$
+ \begin{align}
+ 	& 1+\frac{dy}{dx}=\frac{dt}{dx}\\
+  	& \frac{dy}{dx}=\frac{dt}{dx}-1
+ \end{align}
+now substituting the value of $\frac{dy}{dx}$ in question
+\begin{align}
+	\frac{dt}{dx}-1&=\frac{t+2}{2t-1}\\
+	\frac{dt}{dx}&=\frac{t+2}{2t-1}+1\\
+	\frac{dt}{dx}&=\frac{t+2+2t-1}{2t-1}\\
+	\frac{dt}{dx}&=\frac{3t+1}{2t-1}\\	
+	\frac{2t-1}{3t+1}dt&=dx\\	
+	\int \frac{2t-1}{3t+1}dt&=\int dx\\
+	\int \left( \frac{2}{3}-\frac{5}{3(3t+1)} \right)dt&=\int dx\\
+	\int \frac{2}{3}dt- \int \frac{5}{3(3t+1)}dt&=\int dx\\
+	\frac{2}{3}\int dt-\frac{5}{3} \int \frac{1}{3t+1}dt&=\int dx\\
+	\frac{2}{3} t-\frac{5}{3}\frac{\ln{3t+1}}{3}&=x+C_1\\
+	\frac{2}{3} t-\frac{5(\ln{3t+1)}}{9}&=x+C_1
+\end{align}
+putting the value of t in equation $(15)$
+\begin{align}
+\frac{2}{3}(x+y)-\frac{5(\ln(3(x+y)+1)}{9}&=x+C_1
+\end{align}
+\end{document}
