@@ -9,7 +9,7 @@ x=[118,120,122,127,128,129,130,132,
 163,164,165,166,
 172,173]
 bins=[117.5,126.5,135.5,144.5,153.5,162.5,171.5,180.5]
-plt.hist(x,bins=bins,edgecolor='black')
+plt.hist(x,bins=bins, histtype='bar',edgecolor='black')
 plt.xlabel('length in (mm)')
 plt.ylabel('Number of leaves')
 
