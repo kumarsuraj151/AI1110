@@ -1,0 +1,90 @@
+\documentclass[10pt,twocolumn]{IEEEtran}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[latin1]{inputenc}                                 
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                        
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\def\inputGnumericTable{}
+\newcommand{\question}{\noindent \textbf{Question: }}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+
+
+\title{Assignment 4}
+\author{Suraj kumar \\ \normalsize AI21BTECH11029\\ \Large CBSE 12th Ex 13.1 Q10 }
+\begin{document}
+\maketitle
+\question A black and a red ball is rolled.
+\begin{enumerate}[label=(\roman*)]
+    \item Find the conditional probability of obtaining a sum greater than 9,given that black die resulted in a 5
+    \item Find the conditional probability of obtaining the sum 8,given that the red die resulted in a number less than 4
+\end{enumerate}
+\solution
+\begin{enumerate}[label=(\roman*)]
+    \item  let, B denote black coloured die and R denote red colored die
+          then, the sample space for the given experiment will be:\\
+          S$=$ \\
+          \{ (B1,R1),(B1,R2),(B1,R3),(B1,R4),(B1,R5),(B1,R6), \\
+          (B2,R1),(B2,R2),(B2,R3),(B2,R4),(B2,R5),(B2,R6), \\
+          (B3,R1),(B3,R2),(B3,R3),(B3,R4),(B3,R5),(B3,R6), \\
+          (B4,R1),(B4,R2),(B4,R3),(B4,R4),(B4,R5),(B4,R6), \\
+          (B5,R1),(B5,R2),(B5,R3),(B5,R4),(B5,R5),(B5,R6), \\
+          (B6,R1),(B6,R2),(B6,R3),(B6,R4),(B6,R5),(B6,R6)\}\\
+          (a) let $A$ be the event of 'obtaining a sum greater than 9' and $B$ be the event of ' getting 5 on black die'
+          then $A=$
+          \{(B4,R6),(B5,R5),(B5,R6),(B6,R4) \\
+          ,(B6,R5),(B6,R6)\} \\
+          and B=
+          \{(B5,R1),(B5,R2),(B5,R3),        \\
+          (B5,R4),(B5,R5),(B5,R6)\}
+          \begin{align*}
+              \Rightarrow  A \cap B = \{ (B5,R5),(B5,R6)\}
+          \end{align*}
+          So,
+          \begin{align}
+              P(A)=\frac{6}{36}=\frac{1}{6},\\
+               P(A\cap B)=\frac{2}{36}=\frac{1}{19}
+          \end{align}
+          Now we know that by defination of conditional probability,
+          \begin{align*}
+              P\left(\frac{A}{B}\right) =\frac{P(A\cap B)}{P(B)}
+          \end{align*}
+          Now substiting the value we get
+          \begin{align}
+              \Rightarrow P\left(\frac{A}{B}\right)=\frac{\frac{1}{18}}{\frac{1}{6}}=\frac{6}{18}=\frac{1}{3}
+          \end{align}
+    \item let, A be the event of
+          obtaining a sum 8
+          and B be the event of 'getting a number less than 4 on red die'\\
+          then $ A=$\{(B2,R6),(B3,R5),(B4,R4),\\(B5,R3),(B6,R2) \}\\
+          B= \{(B1,R1),(B2,R1),(B3,R1),(B4,R1),(B5,R1),(B6,R1),\\
+          (B1,R2),(B2,R2),(B3,R2),(B4,R2),(B5,R2),(B6,R2),\\
+          (B1,R3),(B2,R3),(B3,R3),(B4,R3),(B5,R3),(B6,R3)\}\\
+          and,
+          $\Rightarrow A\cap B = \{ (B5,R3),(B6,R2)\} $\\
+          So,
+          \begin{align}
+              P(A)=\frac{5}{36}                          \\
+              P(B)=\frac{18}{36}=\frac{1}{2},            \\
+              P(A\cap B)=\frac{2}{36}=\frac{1}{19}
+          \end{align}
+          so,
+          we know that by conditional probability,
+          \begin{align*}
+              P\left(\frac{A}{B}\right)=\frac{P(A\cap B)}{P(B)}
+          \end{align*}
+          Now by substiting the value we get
+          \begin{align}
+              \Rightarrow P\left(\frac{A}{B}\right)=\frac{\frac{1}{18}}{\frac{1}{2}}=\frac{2}{18}=\frac{1}{9}
+          \end{align}
+
+\end{enumerate}
+
+\end{document}
